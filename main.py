@@ -37,5 +37,13 @@ async def verifing(ctx : lightbulb.Context):
         pass
 
 
+@bot.command
+@lightbulb.command("ping", "Ukáže latenci bota")
+@lightbulb.implements(lightbulb.PrefixCommand)
+async def pingo(ctx : lightbulb.Context):
+    embed = hikari.Embed(title = "Pong! :ping_pong:", description = f"{bot.heartbeat_latency} ms")
+    await ctx.respond(embed=embed)
+
+
 
 bot.run(activity = hikari.Activity(name = "budoucí IT studenty na SSPŠ", type = 3))

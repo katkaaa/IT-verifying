@@ -41,7 +41,7 @@ async def verifing(ctx : lightbulb.Context):
 @lightbulb.command("ping", "Ukáže latenci bota")
 @lightbulb.implements(lightbulb.PrefixCommand)
 async def pingo(ctx : lightbulb.Context):
-    embed = hikari.Embed(title = "Pong! :ping_pong:", description = f"{bot.heartbeat_latency} ms")
+    embed = hikari.Embed(title = "Pong! :ping_pong:", description = f"{bot.heartbeat_latency * 1000:.0f} ms")
     await ctx.respond(embed=embed)
 
 

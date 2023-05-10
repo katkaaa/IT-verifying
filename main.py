@@ -9,7 +9,7 @@ load_dotenv()
 token = os.getenv("token")
 intents = hikari.Intents.ALL
 
-bot = lightbulb.BotApp(token = token, prefix = ">>", default_enabled_guilds = ([1105477487472939053, 916355503767035985]), intents = intents, help_class = None)
+bot = lightbulb.BotApp(token = token, prefix = ">>", intents = intents, help_class = None)
 
 @bot.command
 @lightbulb.option("number", "vaše evidenční číslo", type = str, required = True)

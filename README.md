@@ -1,5 +1,5 @@
 # IT-verifying
-A verifying bot for the SSPS IT discord server
+A verifying bot for a discord server
 
 # How to use
 idk just do it somehow
